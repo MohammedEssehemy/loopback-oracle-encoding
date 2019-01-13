@@ -1,0 +1,25 @@
+{
+  "name": "depts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "oracle": {
+      "schema": "new_archive",
+      "table": "DEPT_FOLDERS"
+    }
+  },
+  "properties": {
+    "DEPT_ID": {
+      "type": "number",
+      "id": true
+    },
+    "DEPT_FOLDER_NAME": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
